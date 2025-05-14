@@ -53,7 +53,7 @@ export default function TechStack() {
     { name: "AWS", category: "devops", level: 4, icon: <AWSIcon size={10} />},
     
     // Other
-    { name: "Shell Scripting", category: "other", level: 4, icon: <LinuxIcon size={10} />},
+    { name: "Shell Script", category: "other", level: 4, icon: <LinuxIcon size={10} />},
     { name: "Git", category: "other", level: 4, icon: <GitIcon size={10} />},
     { name: "Asana", category: "other", level: 4, icon: <AsanaIcon size={10} />},
     { name: "Postman", category: "other", level: 5, icon: <PostmanIcon size={10} />},

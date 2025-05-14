@@ -1,4 +1,5 @@
 import Hero from "@/components/hero";
+import Projects from "@/components/projects";
 import TechStack from "@/components/tech-stack";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <TechStack />
+      <Projects />
     </main>
   )
 }
