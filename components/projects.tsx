@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Filter, ExternalLink, Github, Code } from "lucide-react";
+import { Filter, ExternalLink, Github, Code, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
@@ -97,7 +97,7 @@ export default function Projects() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-gray-700">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-gray-500">
                             Proyectos Destacados
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -198,7 +198,7 @@ export default function Projects() {
                                             <Github className="h-4 w-4" /> Código
                                         </Button>
                                     )}
-                                    <Button variant="outline" size="sm" className="gap-1 ml-auto">
+                                    <Button variant="outline" size="sm" className="gap-1 ml-auto text-emerald-500 hover:text-emerald-700 rounded">
                                         <Code className="h-4 w-4" /> Detalles
                                     </Button>
                                 </div>
