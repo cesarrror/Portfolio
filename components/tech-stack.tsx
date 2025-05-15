@@ -11,7 +11,7 @@ interface Technology {
   name: string
   category: TechCategory
   level: number // 1-5
-  icon?: ReactElement
+  icon: ReactElement
 }
 
 export default function TechStack() {
@@ -42,7 +42,7 @@ export default function TechStack() {
     { name: "MariaDB", category: "database", level: 5, icon: <MariaDBIcon size={10} />},
     { name: "MySQL", category: "database", level: 5, icon: <MySQLIcon size={10} />},
     { name: "PostgreSQL", category: "database", level: 4, icon: <PostgresIcon size={10} />},
-    { name: "MSSQL", category: "database", level: 5, icon: <MSSQLIcon size={10} />},
+    { name: "MSSQL", category: "database", level: 4, icon: <MSSQLIcon size={10} />},
     { name: "Redis", category: "database", level: 4, icon: <RedisIcon size={10} />},
     { name: "MongoDB", category: "database", level: 4, icon: <MongoIcon size={10} />},
 
@@ -122,7 +122,7 @@ export default function TechStack() {
                   <div className="bg-white dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
                     <div className="flex justify-between items-center mb-2">
                         <h3 className="font-medium text-gray-700 dark:text-white flex flex-grid gap-2 items-center">
-                            <span className={`${tech.name === 'Express.js' || tech.name === 'Flask' || tech.name === 'Symfony' || tech.name === 'CodeIgniter' ? 'bg-gray-700 rounded-full p-1' : 'p-1'}`}>{tech.icon ? tech.icon : defaultIcon()}</span>{tech.name}
+                            <span className={`${tech.name === 'Express.js' || tech.name === 'Flask' || tech.name === 'Symfony' || tech.name === 'CodeIgniter' || tech.name === 'AWS' ? 'bg-gray-700 rounded-full p-1' : 'p-1'}`}>{tech.icon ? tech.icon : defaultIcon()}</span>{tech.name}
                         </h3>
                       <div className="flex">
                         {[...Array(5)].map((_, i) => (
